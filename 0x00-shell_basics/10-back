@@ -1,4 +1,2 @@
 #!/bin/bash
-current_dir=$(pwd)
 cd -
-cd $current_dir
