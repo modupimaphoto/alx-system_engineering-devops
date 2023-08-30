@@ -3,3 +3,4 @@ Display current directory contents, including hidden files (starting with .).
 ls -lan - display the contents in long format with user and group IDs displayed numericaly and hidden flie
 mkdir ../../tmp/my_first_directory creates director y in tmp folder
 mv /tmp/betty /tmp/my_first_directory - moves betty file fom /tmp/ to /tmp/my_first_directory
+rm /tmp/my_first_directory/betty - deletes the file betty
