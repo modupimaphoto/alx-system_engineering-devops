@@ -7,3 +7,4 @@ rm /tmp/my_first_directory/betty - deletes the file betty
 rmdir /tmp/my_first_directory - removes my_first_directory
 cd .. - go bask to the previous directory
 ls -la . /boot - list all files in the current and boot directory
+file /tmp/iamafile - prints file type
