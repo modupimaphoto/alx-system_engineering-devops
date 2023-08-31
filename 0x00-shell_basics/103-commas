@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1d ./* | tr n ,
+ls -1Ap | sed ':a;N;ba;s/\n/, /g'
