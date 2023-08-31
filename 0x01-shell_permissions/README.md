@@ -5,3 +5,4 @@ sudo chown betty hello -  changes the owner of the file hello to the user betty
 chmod 774 hello - adds execute permission to the owner of the file hello
 chmod 754  hello - a script that adds execute permission to the owner and the group owner, and read permission to other users, to the file hello
 chmod 007 hello - -defintion
+script that sets the mode of the file hello the same as olleh’s mode
