@@ -1,2 +1,2 @@
 #!/bin/bash
-read -p | tr -d 'cC'
+tr -d cC
