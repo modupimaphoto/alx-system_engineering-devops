@@ -1,0 +1,7 @@
+### Specifics Explanation:
+
+1. Why Add Each Element:
+
+- Firewalls: Added to enhance security by controlling incoming and outgoing traffic, preventing unauthorized access, and protecting against potential threats.
+- **Load Balancer (HAProxy) - Cluster: Configured as a cluster to provide high availability and load balancing. If one load balancer fails, the other can take over, ensuring continuous service availability.
+- Split Components (Web Server, Application Server, Database): Distributing components across different servers provides isolation, enhances security, and allows for better resource allocation. It also enables horizontal scaling, making it easier to scale individual components based on demand.
