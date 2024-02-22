@@ -1,0 +1,23 @@
+### Specifics Explanation:
+
+1. What is a server: A server is a computer or system that provides services or resources to other computers, known as clients, over a network.
+
+2. What is the role of the domain name: The domain name (foobar.com) is a user-friendly alias for the server's IP address, making it easier for users to access the website.
+
+3. What type of DNS record www is in www.foobar.com: The www in www.foobar.com is a subdomain and typically represented as a CNAME (Canonical Name) DNS record, pointing to the main domain (foobar.com).
+
+4. What is the role of the web server: Nginx serves as the entry point for incoming HTTP requests, handling static content and forwarding dynamic requests to the application server.
+
+5. What is the role of the application server: The application server hosts the website's codebase, processes dynamic requests, and communicates with the database to retrieve and update data.
+
+6. What is the role of the database: MySQL stores and manages the website/application's data, handling database queries from the application server.
+
+7. What is the server using to communicate with the computer of the user requesting the website: The server communicates with the user's computer over the internet using the HTTP protocol. The web server and application server jointly generate the response, which is then sent back to the user.
+
+### The issues are with this infrastructure:
+
+1. SPOF (Single Point of Failure): The entire infrastructure relies on a single server, posing a risk of downtime if the server fails.
+
+2. Downtime during Maintenance: When deploying new code, the web server needs to be restarted, causing downtime.
+
+3. Scaling Challenges: The current setup may struggle to handle increased traffic.
