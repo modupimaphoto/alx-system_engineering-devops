@@ -1,0 +1,25 @@
+### Specifics Explanation:
+
+1. Why Add Each Element:
+
+- Firewalls: Added to enhance security by controlling incoming and outgoing traffic, preventing unauthorized access, and protecting against potential threats.
+- SSL Certificate: Ensures secure communication by encrypting data between the user's browser and the web server, preventing data interception or tampering.
+- Monitoring Clients: Used to keep track of server health, performance metrics, and security incidents for proactive issue resolution.
+
+3. What are firewalls for: firewalls control incoming and outgoing network traffic based on predetermined security rules. They act as a barrier between the server and the external network, preventing unauthorized access and protecting against various cyber threats.
+
+4. Why is the traffic served over HTTPS: HTTPS encrypts data transmitted between the user's browser and the web server, providing confidentiality and integrity. It prevents attackers from intercepting or modifying sensitive information during transmission.
+
+5. What monitoring is used for: Monitoring is used to track the performance, availability, and security of the infrastructure. It helps detect issues proactively, ensures optimal performance, and facilitates quick response to incidents.
+
+6. How the monitoring tool is collecting data: Monitoring tools, collect data through monitoring agents installed on servers. These agents gather information on system metrics, logs, and events, sending the data to the monitoring service for analysis and visualization.
+
+7. Explain what to do if you want to monitor your web server QPS: To monitor Web Server QPS (Queries Per Second), you can set up monitoring tools to collect and analyze HTTP server logs. Track the number of requests per second to gauge server load and performance.
+
+### Issues with the Infrastructure:
+
+1. Terminating SSL at the Load Balancer Level: Terminating SSL at the load balancer means decrypting HTTPS traffic at that point. It can expose data in transit between the load balancer and the application servers. Ideally, SSL termination should occur at the application servers for end-to-end encryption.
+
+2. Having Only One MySQL Server Capable of Accepting Writes:  A single MySQL server accepting writes is a single point of failure. If this server fails, write operations become unavailable.
+
+3. Servers with All the Same Components (Database, Web Server, and Application Server): Uniform servers can lead to a lack of diversity in the infrastructure, making it more vulnerable to common issues, such as software vulnerabilities or hardware failures.
